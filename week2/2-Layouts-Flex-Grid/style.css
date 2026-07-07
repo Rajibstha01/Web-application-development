@@ -48,7 +48,9 @@ main {
 }
 
 main > header {
-  /* STEP_1 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ==========================================================================
@@ -63,7 +65,9 @@ aside {
 }
 
 .sidebar {
-  /* STEP_2 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 menu.sidebar-menu {
@@ -147,7 +151,8 @@ menu.sidebar-menu {
 
 /* Task Lists */
 .task-list {
-  /* STEP_4 */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 
 ul.task-list {
@@ -187,7 +192,8 @@ ul.task-list {
 /* Summary Cards Dashboard */
 #summary-container {
   margin-top: 1rem;
-  /* STEP_3.1 */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 
 .summary-card {
@@ -199,7 +205,8 @@ ul.task-list {
   font-weight: bold;
   text-align: center;
   box-shadow: 0 4px 10px hsla(0, 0%, 0%, 0.2);
-  /* STEP_3.2 */
+  display: flex;
+  flex-direction: column;
 }
 
 /* ==========================================================================
