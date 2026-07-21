@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Understanding HTML Links & CSS</title>
+    <style>
+        p{
+            border-left: 4px solid;
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-radius: 2px;
+            color: #5e5959;
+        }
+        #redbox{
+            background-color: rgb(255, 0, 0 , 0.15);
+            border-left-color: #4169e1;
+        }
+        .graybox{
+            border-left-color: #4169e1;
+            background-color: #f0f0f0;
+        }
+        #yellowbox{
+            border-left-color: #4169e1;
+            background-color: #fdf1c7;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,21 +38,21 @@
     <main>
         <h1>Understanding HTML Links</h1>
 
-        <p >
+        <p id="redbox">
             Hyperlinks are the backbone of the web. They allow users to navigate between pages seamlessly. Below, we explore the two main types of links: 
-            <span>Absolute</span> and 
-            <strong>Relative</strong>.
+            <span style="color: red; font-weight: bold;"><u>Absolute</u></span> and 
+            <strong style="color: brown;">Relative</strong>.
         </p>
 
         <h2>1. Absolute Linking</h2>
 
-        <p>Absolute links point to a specific, full URL on the internet. They must include the protocol (like https://) and the domain name. These are typically used to link to external websites.</p>
+        <p class="graybox">Absolute links point to a specific, full URL on the internet. They must include the protocol (like https://) and the domain name. These are typically used to link to external websites.</p>
 
-        <p><strong>Example:</strong> Learn more about web development by visiting the <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank">Wikipedia page for HTTP</a>.</p>
+        <p class="graybox"><strong>Example:</strong> Learn more about web development by visiting the <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank">Wikipedia page for HTTP</a>.</p>
         
         <h2>2. Relative Linking</h2>
 
-        <p>
+        <p id="yellowbox">
             Relative links point to a file relative to the current file's location on the same server. They do not include the protocol or domain name. These are ideal for linking pages within your own website because if you change your domain name, the links won't break.
         </p>
 
