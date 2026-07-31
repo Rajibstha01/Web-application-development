@@ -284,3 +284,54 @@ ul.task-list {
 .show {
   display: inline-block;
 }
+
+/* ==========================================================================
+   8. RESPONSIVE / MEDIA QUERIES
+   ========================================================================== */
+
+/* ---- Tablet: max-width 1024px ---- */
+@media (max-width: 1024px) {
+  .root-container {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    min-height: auto;
+  }
+
+  .page-footer {
+    position: static;
+  }
+
+  .sidebar-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .task-list {
+    grid-template-columns: auto auto;
+  }
+}
+
+/* for Mobile phone screen: max-width 640px */
+@media (max-width: 640px) {
+  
+  .task-list {
+    grid-template-columns: auto;
+  }
+
+  .task-card footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .task-card footer .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #summary-container {
+    flex-direction: column;
+  }
+}
